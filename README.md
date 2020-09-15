@@ -1,6 +1,6 @@
 # Male-Female Classification
 ![alt text](https://sun9-13.userapi.com/UGl901HP7Nha_3CXlFycZVMcVPXI603KwEOQPA/aGT9oNZPAsY.jpg)
-
+* accuracy = 0.974 on the validation set
 ## Table of Contents (Optional)
 
 > If your `README` has a lot of info, section headers might be nice.
@@ -69,5 +69,4 @@ Train for 2 epoch
 optimizer = optim.Adam(model_resnet34.parameters(), lr=0.001)
 train(model_resnet34, optimizer, torch.nn.CrossEntropyLoss(), train_loader, epochs=2, device=device)
 ```
-##Result
-* accuracy = 0.974 on the validation set
+
