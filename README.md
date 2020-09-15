@@ -38,13 +38,13 @@ python run.py -f = "Path to image folder" -m = "path to model"
 ```
 Script will generate `process_results.json` file with the results of prediction
 ```json
-{"000074.jpg": "female", "000083.jpg": "female", ... }
+{"000074.jpg": "female", "000083.jpg": "female"}
 ```
 
 ## Description
 Load and split the data
 ```python
-data = ImageFolder(root = "C:/Users/Owner/Desktop/Intership/internship_data", transform = transform)
+data = ImageFolder(root = directory , transform = transform)
 targets = data.targets
 train_idx, valid_idx = train_test_split(np.arange(len(targets)), test_size = 0.2, shuffle=True, stratify=targets)
 ```
@@ -69,7 +69,5 @@ Train for 2 epoch
 optimizer = optim.Adam(model_resnet34.parameters(), lr=0.001)
 train(model_resnet34, optimizer, torch.nn.CrossEntropyLoss(), train_loader, epochs=2, device=device)
 ```
-
- 
 ##Result
 * accuracy = 0.974 on the validation set
