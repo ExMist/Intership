@@ -7,7 +7,7 @@ from torchvision import transforms
 from tqdm import tqdm
 import torch
 
-flags.DEFINE_string('model', r"C:\Users\Owner\Desktop\Classification\models\21_56.pth", 'Path to model', short_name='m')
+flags.DEFINE_string('model', r"C:\Users\Owner\Desktop\Intership\models\21_56.pth", 'Path to model', short_name='m')
 flags.DEFINE_string('folder', None, 'Path to image folder', short_name='f')
 
 def main(_argv):
