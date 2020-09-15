@@ -9,7 +9,6 @@
 - [Setup](#Setup)
 - [Usage](#Usage)
 - [Description of the solution](#Description)
-- [Result](#Result)
 
 ## Installation
 
