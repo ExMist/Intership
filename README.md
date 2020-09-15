@@ -8,7 +8,7 @@
 - [Installation](#installation)
 - [Setup](#Setup)
 - [Usage](#Usage)
-- [Description of the solution](#Description of the solution)
+- [Description of the solution](#Description)
 - [Result](#Result)
 
 ## Installation
@@ -41,7 +41,7 @@ Script will generate `process_results.json` file with the results of prediction
 {"000074.jpg": "female", "000083.jpg": "female", ... }
 ```
 
-## Description of the solution
+## Description
 Load and split the data
 ```python
 data = ImageFolder(root = "C:/Users/Owner/Desktop/Intership/internship_data", transform = transform)
