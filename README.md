@@ -69,5 +69,7 @@ Train for 2 epoch
 optimizer = optim.Adam(model_resnet34.parameters(), lr=0.001)
 train(model_resnet34, optimizer, torch.nn.CrossEntropyLoss(), train_loader, epochs=2, device=device)
 ```
+
+ 
 ##Result
 * accuracy = 0.974 on the validation set
